@@ -1,4 +1,3 @@
-
 import './App.css'
 import {useState} from "react";
 import NumberBalls from "./Components/NumberBalls.tsx";
@@ -18,7 +17,9 @@ const App = () =>  {
     return (
         <>
             <button type={"button"} onClick={() => setNumbers(generateNumbers())}>New numbers</button>
-            <NumberBalls numbers={numbers} />
+            <div className= "number-ball-container">
+                <NumberBalls numbers={numbers} />
+            </div>
         </>
     );
 };
